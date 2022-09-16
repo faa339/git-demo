@@ -9,12 +9,14 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print("Staring now!");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        counter++;
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            counter++;
+        }
     }
 }
